@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Tentang LDK Uswah - LDK Uswah UPNVJ</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gasoek+One&amp;family=Inter:wght@400;700;800&amp;family=Berkshire+Swash&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+
+        .asymmetric-indent {
+            margin-left: 64px;
+        }
+
+        @media (max-width: 768px) {
+            .asymmetric-indent {
+                margin-left: 24px;
+            }
+        }
+
+        .brutalist-button {
+            border: 1px solid #090e5a;
+            box-shadow: 2px 2px 0px 0px #090e5a;
+            transition: all 0.2s ease;
+        }
+
+        .brutalist-button:active {
+            box-shadow: 0px 0px 0px 0px #090e5a;
+            transform: translate(2px, 2px);
+        }
+
+        .geometric-step {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+        }
+
+        .text-outline {
+            -webkit-text-stroke: 1px #005cb5;
+            color: transparent;
+        }
+
+        .blur-shape {
+            filter: blur(40px);
+            opacity: 0.15;
+            z-index: -1;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-container": "#eeecff",
+                        "on-secondary-fixed": "#001a42",
+                        "tertiary": "#126481",
+                        "surface-dim": "#d6d7ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e0e0ff",
+                        "on-tertiary-fixed": "#001f2b",
+                        "inverse-on-surface": "#f1efff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#fefeff",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0074e2",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#aec6ff",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "outline-variant": "#c1c6d5",
+                        "error-container": "#ffdad6",
+                        "secondary": "#245cb4",
+                        "tertiary-container": "#367d9b",
+                        "surface": "#fbf8ff",
+                        "on-surface": "#090e5a",
+                        "surface-tint": "#005db7",
+                        "surface-container-highest": "#e0e0ff",
+                        "on-surface-variant": "#414753",
+                        "surface-container-low": "#f4f2ff",
+                        "on-primary-fixed-variant": "#00468c",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-container": "#fffeff",
+                        "surface-bright": "#fbf8ff",
+                        "on-tertiary-fixed-variant": "#004d65",
+                        "on-primary-fixed": "#001b3d",
+                        "outline": "#717785",
+                        "tertiary-fixed": "#bfe8ff",
+                        "primary": "#005cb5",
+                        "inverse-primary": "#a9c7ff",
+                        "on-secondary-container": "#00377b",
+                        "secondary-container": "#73a2ff",
+                        "tertiary-fixed-dim": "#8ccff1",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e7e6ff",
+                        "on-secondary-fixed-variant": "#004395",
+                        "on-background": "#090e5a",
+                        "inverse-surface": "#22286f",
+                        "background": "#fbf8ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "gutter": "32px",
+                        "asymmetric-offset": "64px",
+                        "unit": "8px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "headline-xl": ["Gasoek One"],
+                        "headline-lg-mobile": ["Gasoek One"],
+                        "body-md": ["Inter"],
+                        "title-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Gasoek One"],
+                        "display-decorative": ["Berkshire Swash"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "800" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.0", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "title-md": ["20px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.1", "fontWeight": "400" }],
+                        "display-decorative": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopAppBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant flex justify-between items-center px-margin-desktop py-2 max-w-full">
+        <div class="flex items-center gap-4">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQopu0ECIl_Ut97XxhmikTu_XhlIuLtNRi0cUSHsRxrfzcg8uLVxPYaRHHAVVOgriqjKqSH9DbODvp2a5HmWrMRdnPNPIGP5olF15FUSO8yYv6S_v8yLQeubRWP5FBFoK7LlEBVs0_nmmtkfItz1BRRWLKgZ-jG2bz3tUEB8jNGo120udIeBZ5vrSUeHjX094_td9jF0rX5JFkJF23Dxj8BxPrvfL8GQktYiteG-I_tZ1vdbgib83CgAyQlOKBtz0EHw"
+                alt="LDK Uswah Logo" class="h-12 w-auto">
+            <div class="font-headline-lg-mobile text-headline-lg-mobile text-primary">LDK USWAH</div>
+        </div>
+        <div class="hidden md:flex gap-gutter items-center">
+            <a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Home</a>
+            <a class="text-primary font-bold border-b-2 border-primary font-body-md" href="#">About</a>
+            <a class="text-on-surface-variant hover:text-primary font-body-md" href="#">LDF</a>
+            <a class="text-on-surface-variant hover:text-primary font-body-md" href="#">News</a>
+            <button class="bg-primary text-on-primary px-6 py-2 brutalist-button font-label-caps">JOIN US</button>
+        </div>
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </nav>
+    <main class="relative">
+        <!-- Floating Abstract Background Elements -->
+        <div class="absolute top-40 -left-20 w-96 h-96 bg-primary-container blur-shape rounded-full"></div>
+        <div class="absolute top-[40%] -right-20 w-80 h-80 bg-secondary-container blur-shape rounded-full"></div>
+        <div
+            class="absolute bottom-20 left-1/2 -translate-x-1/2 w-[600px] h-600px bg-tertiary-fixed-dim blur-shape rounded-full">
+        </div>
+        <!-- Hero Section -->
+        <section
+            class="min-h-[70vh] pt-40 px-margin-desktop md:px-margin-desktop flex flex-col justify-end pb-20 relative">
+            <div class="max-w-4xl">
+                <span class="font-label-caps text-label-caps text-primary tracking-[0.3em] mb-4 block">SIAPA
+                    KAMI?</span>
+                <h1 class="font-headline-xl text-headline-xl uppercase leading-none mb-6">
+                    TENTANG <br> <span class="text-outline">USWAH</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl asymmetric-indent">
+                    Lembaga Dakwah Kampus (LDK) Uswah Universitas Pembangunan Nasional "Veteran" Jakarta adalah wadah
+                    perjuangan intelektual muslim dalam mensyiarkan nilai-nilai keislaman di lingkungan kampus.
+                </p>
+            </div>
+            <!-- Background Image Strip -->
+            <div
+                class="absolute top-0 right-0 w-1/3 h-full -z-10 opacity-10 pointer-events-none overflow-hidden hidden md:block">
+                <img class="w-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAagNZPGQSuYKN-44aiLviElxbPiObVbLGgTcXTqkmgjeiP8dPGH9vVNRviMKtTeDhbIfxeBXs3ScKE-BmpO9B5iMVp04VoFXZBO31j3R0vg3E1HVQDnIpQG_davYftWHyOm7PCIlX1OlRKioeohr8GiL2d1kYyDpp1GWAbGN7hXBwhm5905izUAqU-Ciciug_mnmOLh4YuS--MHGRftP26Cr_wSY2Vuld8_Q09QNASQ0bPho0Zpi21EhboniLdAPNwzw">
+            </div>
+        </section>
+        <!-- Sejarah Section (Narrative Timeline) -->
+        <section class="py-[120px] px-margin-desktop bg-surface-container-low">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+                <div class="md:col-span-4 sticky top-32">
+                    <h2
+                        class="font-headline-lg text-headline-lg uppercase text-primary border-l-4 border-primary pl-4 mb-4">
+                        SEJARAH</h2>
+                    <p class="font-display-decorative text-display-decorative text-secondary opacity-60">Langkah Awal
+                    </p>
+                </div>
+                <div class="md:col-span-8 flex flex-col gap-16">
+                    <div class="relative pl-8 border-l border-outline/30">
+                        <div class="absolute -left-[5px] top-0 w-2 h-2 bg-primary"></div>
+                        <h3 class="font-title-md text-title-md mb-2">Akar Perjuangan</h3>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">LDK Uswah lahir dari semangat
+                            mahasiswa untuk mewujudkan kampus yang religius dan berkarakter. Selama bertahun-tahun,
+                            organisasi ini telah menjadi saksi bisu transformasi mahasiswa UPNVJ menuju arah yang lebih
+                            spiritual dan akademis.</p>
+                    </div>
+                    <div class="relative pl-8 border-l border-outline/30">
+                        <div class="absolute -left-[5px] top-0 w-2 h-2 bg-primary"></div>
+                        <span class="font-label-caps text-label-caps text-primary mb-2 block">ERA SAAT INI</span>
+                        <h3 class="font-title-md text-title-md mb-2">Kabinet Qitharah 26</h3>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">Di bawah naungan Kabinet Qitharah
+                            26, LDK Uswah berkomitmen untuk menjadi 'nada' yang harmonis dalam mendakwahkan kebaikan.
+                            Kami mengedepankan kolaborasi, inklusivitas, dan inovasi dalam setiap program kerja yang
+                            kami jalankan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Visi & Misi Section -->
+        <section class="py-[120px] px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-20">
+                <div class="md:col-span-5 relative group">
+                    <div
+                        class="absolute inset-0 border-2 border-primary -rotate-2 -z-10 transition-transform group-hover:rotate-0">
+                    </div>
+                    <div class="bg-primary p-12 text-on-primary">
+                        <h2 class="font-label-caps text-label-caps mb-8 text-primary-fixed">VISI</h2>
+                        <p class="font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight italic">
+                            "Mewujudkan LDK Uswah sebagai pusat peradaban intelektual muslim yang inklusif, profesional,
+                            dan transformatif di lingkungan UPNVJ."
+                        </p>
+                    </div>
+                </div>
+                <div class="md:col-span-7 md:pl-20">
+                    <h2 class="font-label-caps text-label-caps text-primary mb-10 tracking-widest">MISI ORGANISASI</h2>
+                    <ul class="flex flex-col gap-0">
+                        <li class="border-t border-on-surface/10 py-6 flex gap-8 items-start">
+                            <span
+                                class="font-headline-lg text-headline-lg text-primary opacity-20 leading-none">01</span>
+                            <p class="font-body-lg text-body-lg">Memperkuat pondasi spiritualitas dan intelektualitas
+                                kader melalui pembinaan yang berkelanjutan.</p>
+                        </li>
+                        <li class="border-t border-on-surface/10 py-6 flex gap-8 items-start">
+                            <span
+                                class="font-headline-lg text-headline-lg text-primary opacity-20 leading-none">02</span>
+                            <p class="font-body-lg text-body-lg">Membangun sinergi yang harmonis dengan seluruh elemen
+                                kampus baik internal maupun eksternal.</p>
+                        </li>
+                        <li class="border-t border-on-surface/10 py-6 flex gap-8 items-start">
+                            <span
+                                class="font-headline-lg text-headline-lg text-primary opacity-20 leading-none">03</span>
+                            <p class="font-body-lg text-body-lg">Mengoptimalkan media digital sebagai sarana dakwah yang
+                                kreatif, edukatif, dan inspiratif.</p>
+                        </li>
+                        <li class="border-b border-on-surface/10 py-6 flex gap-8 items-start">
+                            <span
+                                class="font-headline-lg text-headline-lg text-primary opacity-20 leading-none">04</span>
+                            <p class="font-body-lg text-body-lg">Menumbuhkan jiwa kepedulian sosial melalui aksi nyata
+                                di tengah masyarakat.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Struktur Organisasi -->
+        <section class="py-[120px] px-margin-desktop bg-surface-container-highest/30">
+            <div class="text-center mb-24">
+                <h2 class="font-headline-lg text-headline-lg uppercase mb-4">STRUKTUR ORGANISASI</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="font-label-caps text-label-caps text-on-surface-variant">Pilar Penggerak Kabinet Qitharah 26
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-stretch">
+                <!-- Leadership Card 1 -->
+                <div class="flex flex-col gap-4">
+                    <div
+                        class="h-96 w-full bg-surface-container overflow-hidden border border-on-surface/10 grayscale hover:grayscale-0 transition-all duration-500">
+                        <div class="w-full h-full bg-cover bg-center"
+                            data-alt="Professional portrait of a young male student wearing an organizational alma mater jacket, looking confident and smiling against a clean white and blue minimalist studio background. The style is modern, bright, and academic."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBq_dkOZr1uk1k0qKA_uFQptw9NQpnt5qQddWEOizVFK9bwAb5oCUq2n2yD-_vG1NIM1jF-luvcYMTt9WHLBX_FClU1vic6f5JJ6SrDwqiIFcB92oVWqVhoOCA0NUvPQ9-DwGh08xRafEk2BeQcOqFKOiJet6u3L9G1f1LNKwIzDtnoQ5gdhI2tY_dKTarpZtaRQeFenc7CjSDRNWI5dOTmFx1S385UNbF151ThnURgec_YlRqPI1nB')">
+                        </div>
+                    </div>
+                    <div class="border-l-2 border-primary pl-4">
+                        <h4 class="font-title-md text-title-md">Muhammad Azka</h4>
+                        <p class="font-label-caps text-label-caps text-primary">KETUA UMUM</p>
+                    </div>
+                </div>
+                <!-- Leadership Card 2 -->
+                <div class="flex flex-col gap-4 md:mt-12">
+                    <div
+                        class="h-96 w-full bg-surface-container overflow-hidden border border-on-surface/10 grayscale hover:grayscale-0 transition-all duration-500">
+                        <div class="w-full h-full bg-cover bg-center"
+                            data-alt="Professional portrait of a young male student in a formal organization uniform, presenting a friendly and professional demeanor. The composition is off-center with sharp lines and high-contrast lighting, following a minimalist academic aesthetic."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkcz-ZnuRStCoad_wP-Iwf7CpMLr8DunNRwsrIfRuRWvf26y1lhGOqlt0N_CAnJgXgqRZFa0HG2zrP43RhuHp9NCryXZxYuK7tUbgougRU7GCYoduoW-LRYYxNVW0X_qCWCrUgaoAOPO-d6iE3Cw6lxNkP5lopQdTivFNO0WJ-S53GA1VoTVa_EzC-MpMTAb5vrAlK2mzLHn4ISB-cn_dZDodmr8e9DimOMRsetApg59zU4ubBPYf7')">
+                        </div>
+                    </div>
+                    <div class="border-l-2 border-secondary pl-4">
+                        <h4 class="font-title-md text-title-md">Fathurrahman</h4>
+                        <p class="font-label-caps text-label-caps text-secondary">WAKIL KETUA UMUM</p>
+                    </div>
+                </div>
+                <!-- Instagram Integration Visual -->
+                <div class="flex flex-col gap-4">
+                    <div class="h-full w-full bg-primary-container p-8 flex flex-col justify-between">
+                        <span class="material-symbols-outlined text-4xl text-on-primary">group</span>
+                        <div class="text-on-primary">
+                            <p class="font-headline-lg text-headline-lg-mobile mb-4">BERGABUNG BERSAMA KAMI</p>
+                            <p class="font-body-md text-body-md opacity-80 mb-8">Jadilah bagian dari perjalanan dakwah
+                                yang membanggakan di lingkungan kampus UPNVJ.</p>
+                            <a class="inline-block bg-on-primary text-primary px-8 py-3 font-label-caps brutalist-button"
+                                href="#"
+                                style="transform: translate(0px, 0px); box-shadow: rgb(9, 14, 90) 2px 2px 0px 0px;">DAFTAR
+                                SEKARANG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dept List -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-gutter border-t border-on-surface/10 pt-12">
+                <div>
+                    <h5 class="font-label-caps text-label-caps text-primary mb-4">DEPARTEMEN A</h5>
+                    <p class="font-body-md text-on-surface-variant">Pengembangan Sumber Daya Insani</p>
+                </div>
+                <div>
+                    <h5 class="font-label-caps text-label-caps text-primary mb-4">DEPARTEMEN B</h5>
+                    <p class="font-body-md text-on-surface-variant">Syi'ar &amp; Pelayanan Ummat</p>
+                </div>
+                <div>
+                    <h5 class="font-label-caps text-label-caps text-primary mb-4">DEPARTEMEN C</h5>
+                    <p class="font-body-md text-on-surface-variant">Media &amp; Informasi Kreatif</p>
+                </div>
+                <div>
+                    <h5 class="font-label-caps text-label-caps text-primary mb-4">DEPARTEMEN D</h5>
+                    <p class="font-body-md text-on-surface-variant">Kemitraan &amp; Jaringan Luar</p>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-[120px] px-margin-desktop text-center overflow-hidden relative">
+            <h2 class="font-display-decorative text-display-decorative text-primary mb-8">#UswahKeren</h2>
+            <p
+                class="font-headline-xl text-headline-xl text-outline absolute left-1/2 -translate-x-1/2 -bottom-10 opacity-10 whitespace-nowrap pointer-events-none">
+                USWAH MODERNIST • KABINET QITHARAH 26</p>
+            <div class="max-w-2xl mx-auto">
+                <p class="font-body-lg text-body-lg mb-10">Ingin tahu lebih banyak tentang kegiatan harian kami? Ikuti
+                    perjalanan kami di media sosial atau kunjungi sekretariat kami.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="bg-primary text-on-primary px-10 py-4 brutalist-button font-label-caps">LIHAT PROGRAM
+                        KERJA</button>
+                    <button
+                        class="border-2 border-primary text-primary px-10 py-4 brutalist-button font-label-caps">HUBUNGI
+                        KAMI</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full mt-asymmetric-offset bg-on-background text-on-primary grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-asymmetric-offset">
+        <div class="md:col-span-1">
+            <div class="flex items-center gap-4 mb-6">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxTDqvOljROLnBnEdQd5ZyEeecYXxIuJmohStcl0-k1GyQTVFulJj8TcNbYDauYc20Z0N3_3wU30SxYZbrniRxJIyetnFlAx-cyhXyMjUxyeFc6TU_C3rFsBd9JO-VzHkNwQp3d8LD2kRK1KrXVsl-hjUX1TpJBU6uljl54Jp_D1FWw-zGR-oSKNnpo-sYsOkBHOgkUu1Eofs3RZeZJVVR5Ldi7iZA07ey-WyaK_w2wmnO38vkM2QpveFdfLPY_VPYSA"
+                    alt="LDK Uswah Logo" class="h-16 w-auto brightness-0 invert">
+                <div class="font-headline-lg text-headline-lg text-on-primary">LDK USWAH</div>
+            </div>
+            <p class="font-body-md opacity-80">Membangun peradaban dari dalam kampus dengan nilai-nilai islami yang
+                modern dan progresif.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h5 class="font-label-caps text-label-caps text-on-primary">QUICK LINKS</h5>
+            <a class="font-label-caps opacity-70 hover:opacity-100 transition-colors" href="#">Vision &amp; Mission</a>
+            <a class="font-label-caps opacity-70 hover:opacity-100 transition-colors" href="#">Organizational
+                Structure</a>
+            <a class="font-label-caps opacity-70 hover:opacity-100 transition-colors" href="#">LDF Central</a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h5 class="font-label-caps text-label-caps text-on-primary">SUPPORT</h5>
+            <a class="font-label-caps opacity-70 hover:opacity-100 transition-colors" href="#">Privacy Policy</a>
+            <a class="font-label-caps opacity-70 hover:opacity-100 transition-colors" href="#">Contact Support</a>
+            <a class="font-label-caps opacity-70 hover:opacity-100 transition-colors" href="#">FAQs</a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h5 class="font-label-caps text-label-caps text-on-primary">CONNECT</h5>
+            <div class="flex gap-4">
+                <span class="material-symbols-outlined cursor-pointer">public</span>
+                <span class="material-symbols-outlined cursor-pointer">mail</span>
+                <span class="material-symbols-outlined cursor-pointer">chat</span>
+            </div>
+            <p class="font-label-caps opacity-70 mt-8">© 2024 LDK USWAH UPNVJ. Kabinet Qitharah 26. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Simple Micro-interactions
+        document.querySelectorAll('.brutalist-button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = 'translate(-1px, -1px)';
+                button.style.boxShadow = '4px 4px 0px 0px #090e5a';
+            });
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'translate(0, 0)';
+                button.style.boxShadow = '2px 2px 0px 0px #090e5a';
+            });
+        });
+
+        // Sticky Navbar logic
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const nav = document.querySelector('nav');
+
+            if (currentScroll <= 0) {
+                nav.classList.remove('shadow-md');
+                return;
+            }
+
+            if (currentScroll > lastScroll) {
+                // Scrolling down
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                nav.style.transform = 'translateY(0)';
+                nav.classList.add('shadow-md');
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+
+
+</body>
+
+</html>

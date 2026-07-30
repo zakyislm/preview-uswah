@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Informasi &amp; Berita - LDK Uswah UPNVJ</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gasoek+One&amp;family=Inter:wght@400;700;800&amp;family=Berkshire+Swash&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#090e5a",
+                        "surface-bright": "#fbf8ff",
+                        "on-primary-fixed-variant": "#00468c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#0074e2",
+                        "tertiary": "#126481",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#090e5a",
+                        "on-secondary-container": "#00377b",
+                        "surface-container-high": "#e7e6ff",
+                        "on-surface-variant": "#414753",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-container-low": "#f4f2ff",
+                        "surface-container-highest": "#e0e0ff",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#001a42",
+                        "primary": "#005cb5",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#73a2ff",
+                        "outline": "#717785",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#fefeff",
+                        "on-primary-container": "#fffeff",
+                        "tertiary-fixed-dim": "#8ccff1",
+                        "tertiary-fixed": "#bfe8ff",
+                        "secondary": "#245cb4",
+                        "surface-tint": "#005db7",
+                        "outline-variant": "#c1c6d5",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#a9c7ff",
+                        "surface-dim": "#d6d7ff",
+                        "on-tertiary-fixed": "#001f2b",
+                        "on-tertiary-fixed-variant": "#004d65",
+                        "background": "#fbf8ff",
+                        "secondary-fixed-dim": "#aec6ff",
+                        "surface": "#fbf8ff",
+                        "inverse-surface": "#22286f",
+                        "on-secondary-fixed-variant": "#004395",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-container": "#eeecff",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "asymmetric-offset": "64px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Gasoek One"],
+                        "headline-lg-mobile": ["Gasoek One"],
+                        "title-md": ["Inter"],
+                        "display-decorative": ["Berkshire Swash"],
+                        "headline-xl": ["Gasoek One"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "800" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.1", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "400" }],
+                        "title-md": ["20px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "display-decorative": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.0", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .brutalist-button {
+            border: 1px solid #090e5a;
+            box-shadow: 4px 4px 0px 0px #090e5a;
+            transition: all 0.2s ease;
+        }
+
+        .brutalist-button:active {
+            box-shadow: 0px 0px 0px 0px #090e5a;
+            transform: translate(4px, 4px);
+        }
+
+        .blurred-ornament {
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        .asymmetric-grid-step {
+            margin-left: 64px;
+        }
+
+        @media (max-width: 768px) {
+            .asymmetric-grid-step {
+                margin-left: 0px;
+            }
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-surface-bright text-on-surface font-body-md selection:bg-primary-container selection:text-white">
+    <!-- TopNavBar -->
+    <nav class="w-full top-0 sticky bg-surface-bright z-50 border-b border-primary">
+        <div class="flex justify-between items-center px-margin-desktop py-unit max-w-full mx-auto">
+            <div class="flex items-center gap-4">
+                <img alt="LDK Uswah Logo" class="h-12 w-12 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7OHERgdtSgbH5_AdhfaL2edSSMB83RMFVCmE6y8cVkuDPuYJ7vXxID1WUdDLCrPXf1LXVnVO7KFM9Rsj-fNk3IVzoRvhT_jxhH8srKEoLv6PNtz20JogCqLaWexZlFCHJhIh0YrwbamlFofyOt8_aNmrSxhWtaI1mt79z0QhbJ-pg5myjsNlYpsqDl3ndRGyRVrZjSMOE9DH5AR84MCvZRdozmyN7KHivP9Wk8PPHFcvQ9nt69ITo_kn_st4BrOHqoQ">
+                <span class="font-headline-lg text-headline-lg text-primary">LDK USWAH</span>
+            </div>
+            <div class="hidden md:flex gap-gutter items-center"><a
+                    class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
+                    href="#">Home</a><a
+                    class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
+                    href="#">About</a><a
+                    class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
+                    href="#">LDF</a><a class="font-body-md text-primary font-bold border-b-2 border-primary pb-1"
+                    href="#">News</a><button
+                    class="bg-primary text-on-primary-container px-6 py-2 brutalist-button font-label-caps">Join
+                    Us</button></div>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <main class="relative min-h-screen overflow-hidden">
+        <!-- Background Ornaments -->
+        <div class="absolute top-20 -left-20 w-96 h-96 bg-primary-container rounded-full blurred-ornament"
+            style="transform: translate(0px, 13.1048px);"></div>
+        <div class="absolute bottom-40 -right-20 w-80 h-80 bg-secondary-container rounded-full blurred-ornament"
+            style="transform: translate(0px, 26.2095px);"></div>
+        <!-- Hero Section -->
+        <section class="px-margin-desktop pt-24 pb-16">
+            <div class="max-w-4xl">
+                <h1 class="font-headline-xl text-headline-xl text-primary mb-6">INFORMASI &amp; BERITA</h1>
+                <div class="asymmetric-grid-step border-l-4 border-primary pl-8 py-2">
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Keep up with the spiritual pulse of UPNVJ. Get the latest announcements, event summaries, and
+                        intellectual reflections from Kabinet Qitharah 26.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Featured News -->
+        <section class="px-margin-desktop mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-0 relative">
+                <div class="md:col-span-7 aspect-[16/9] bg-primary relative overflow-hidden group">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                        data-alt="A cinematic, high-angle shot of a vibrant Islamic youth gathering at a modern university campus during sunset. The lighting is warm and golden, casting long shadows across clean architectural surfaces. The style is editorial and intellectual, with a shallow depth of field focusing on a central speaker while the audience of diverse students is softly blurred in the background. The color palette emphasizes deep blues and rich gold tones, aligning with the Uswah Modernist aesthetic."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4wpmfktF5zWelxvIxvKzKkxRk6mj-2GLELZ6pZ5oWYrsXTk9yhy2z6mil48-oyu0i0-U1drVBN7bRIOWm7J9bGMxzEI7M2SNan7ta217O1wr189ZRorwDgNpS_yAPrnKufrP4mMBX_ESvN93q1E1OdyZVevTWjwqdraLn5vlGExZqugkA8tLn_Qa5WOoO7f80YNd26kUG9IXQXhPrkL1hXptMkGWF4rpjpZhNz8VoqxWykKf80j9P">
+                    <div class="absolute top-0 left-0 p-6">
+                        <span class="bg-primary text-white font-label-caps px-4 py-1">Featured Announcement</span>
+                    </div>
+                </div>
+                <div
+                    class="md:col-span-5 bg-white p-12 flex flex-col justify-center border-t md:border-t-0 md:border-l border-on-surface">
+                    <p class="font-label-caps text-primary mb-4">OCTOBER 24, 2024</p>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Grand Launching Kabinet Qitharah
+                        26: Resonansi Dakwah Kampus</h2>
+                    <p class="font-body-md text-on-surface-variant mb-8">Welcoming a new era of spiritual leadership and
+                        academic excellence. Read about our vision for the upcoming year and the key programs we are
+                        launching to serve the UPNVJ community.</p>
+                    <a class="inline-flex items-center gap-2 font-label-caps text-primary group" href="#">
+                        READ THE FULL ARTICLE
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Search and Filter Bar -->
+        <section class="px-margin-desktop mb-12">
+            <div
+                class="flex flex-col md:flex-row justify-between items-end gap-gutter border-b border-outline-variant pb-4">
+                <div class="flex flex-wrap gap-6">
+                    <button class="font-label-caps text-primary border-b-2 border-primary pb-1">ALL NEWS</button>
+                    <button
+                        class="font-label-caps text-on-surface-variant hover:text-primary transition-colors">EVENT</button>
+                    <button
+                        class="font-label-caps text-on-surface-variant hover:text-primary transition-colors">KAJIAN</button>
+                    <button
+                        class="font-label-caps text-on-surface-variant hover:text-primary transition-colors">ARTICLE</button>
+                    <button class="font-label-caps text-on-surface-variant hover:text-primary transition-colors">PRESS
+                        RELEASE</button>
+                </div>
+                <div class="w-full md:w-80 relative group">
+                    <input
+                        class="w-full bg-transparent border-0 border-b-2 border-primary focus:ring-0 px-0 py-2 font-body-md placeholder:text-outline"
+                        placeholder="Search archives..." type="text">
+                    <span class="material-symbols-outlined absolute right-0 top-2 text-primary">search</span>
+                </div>
+            </div>
+        </section>
+        <!-- News Grid -->
+        <section class="px-margin-desktop mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-gutter gap-y-16">
+                <!-- Card 1 -->
+                <article class="flex flex-col">
+                    <div
+                        class="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
+                        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            data-alt="A minimalist photograph of an open notebook and a cup of coffee on a wooden table, illuminated by bright morning sunlight from a window. The style is clean and academic, reflecting a student's study environment. The color palette is light and airy, featuring soft whites, natural wood tones, and hints of deep blue from the notebook cover. The composition follows the rule of thirds, creating an inviting and focused atmosphere for an intellectual article."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipYxccnnLNED-z-Ck18hrZomsWkc68JxL_9glHgzKYcKPdc2LfHYvxk3cX7rLQrygwP-PYTK98CwVfWWn6W2R7aN9ixkt5JENE8uD8bJR3I6_gKLc6MEL-OLwPTTo6XNu0Uk4_QzgVBi42ZNi2ZO-RMZVGnuqHYNvaXSiuZr9_VWW5aQWZpUbuMaGzS2XRlOMqTzHI9h_IpR2oyYbbjIy1MRMw34gs9jBliUmBpVfQhRRDgapCvpR">
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">ARTICLE</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-label-caps text-outline-variant mb-2">OCT 20, 2024</p>
+                        <h3
+                            class="font-title-md text-title-md text-on-surface mb-3 hover:text-primary transition-colors cursor-pointer">
+                            Menyeimbangkan Akademik dan Dakwah: Tips Mahasiswa Muslim</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 line-clamp-3">Bagaimana cara mengatur waktu
+                            di tengah padatnya jadwal kuliah dan organisasi? Simak tips praktis dari rekan-rekan
+                            pengurus LDK Uswah...</p>
+                    </div>
+                    <a class="font-label-caps text-primary flex items-center gap-1 group" href="#">
+                        READ MORE <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+                    </a>
+                </article>
+                <!-- Card 2 -->
+                <article class="flex flex-col mt-12 md:mt-0">
+                    <div
+                        class="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
+                        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            data-alt="A high-contrast wide-angle photograph of a university lecture hall filled with students listening to a seminar. The stage is lit with bright blue and white spotlights, creating a professional and energetic event atmosphere. The style is modern and structural, emphasizing the clean lines of the hall's architecture. The color scheme is dominated by the university's primary blue and crisp whites, conveying a sense of community and learning."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUFks56Ih9UFuMkkHkPQ1u_E7vCFdH4uDo2Rsrda5vJaQHyRm3kxEBdkfEzt81K_gQz_wRKarnvCOhBdVwRjUwrHN1QfkhpwRsbFppTDOHqW87YdxgYfDvg2aAZDUsl8KB4QbyKcoWT4my-C0pS3HlGQppdW84iPk2npFhsPi5YZvNfnDUIDSdkXKY7Uvgkpt67cQBGQ9qU3A5oken3EmiEw54_5C-qi6_Az7voQ_ljPSSwNOz40jz">
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">EVENT</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-label-caps text-outline-variant mb-2">OCT 18, 2024</p>
+                        <h3
+                            class="font-title-md text-title-md text-on-surface mb-3 hover:text-primary transition-colors cursor-pointer">
+                            Seminar Keislaman: Islam &amp; Modernitas di Era Digital</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 line-clamp-3">Mengahadirkan pembicara
+                            nasional, seminar ini membahas tantangan dan peluang dakwah kreatif bagi generasi Z di
+                            lingkungan kampus.</p>
+                    </div>
+                    <a class="font-label-caps text-primary flex items-center gap-1 group" href="#">
+                        READ MORE <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+                    </a>
+                </article>
+                <!-- Card 3 -->
+                <article class="flex flex-col">
+                    <div
+                        class="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
+                        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            data-alt="An atmospheric, close-up photograph of a row of traditional Islamic books on a minimalist white shelf. The lighting is soft and directional, highlighting the textures of the book spines. The style is quiet and spiritual, using a palette of deep navy, muted golds, and clean whites. The focus is sharp on one book titled with Arabic calligraphy, creating a sense of heritage and scholarly depth within a modern minimalist setting."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzixyIwatxNMGnStHQzLdVA5H4MWRMQPwq07GZjjCepKP2XErrvaMRQqx6J0vbFGt4wcuad2ewF57B6X_wNGWigifZ5GzUx23fM8Zd7xYvi3AEeWWvtdLSr4A8VjhgoJCPpVfBTvbOpi8gm-FXwo0VeG_1vlzP7B0fQEK7HeJIRrpbOfMuBx0u9ahAh6MuMCkLyT15vodshu8cbuEijfSss0-h_J4l0IcOPWJhMRF5lCy0FOZ8bjMO">
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">KAJIAN</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-label-caps text-outline-variant mb-2">OCT 15, 2024</p>
+                        <h3
+                            class="font-title-md text-title-md text-on-surface mb-3 hover:text-primary transition-colors cursor-pointer">
+                            Kajian Rutin: Memahami Adab dalam Menuntut Ilmu</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 line-clamp-3">Ringkasan kajian pekanan
+                            mengenai pentingnya menjaga adab sebelum ilmu, berdasarkan kitab-kitab klasik ulama
+                            terdahulu.</p>
+                    </div>
+                    <a class="font-label-caps text-primary flex items-center gap-1 group" href="#">
+                        READ MORE <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+                    </a>
+                </article>
+                <!-- Card 4 -->
+                <article class="flex flex-col">
+                    <div
+                        class="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
+                        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            data-alt="A professional press-release style photograph of two student leaders in formal traditional attire shaking hands in front of a university banner. The image is bright, high-key, and formal. The color palette features a crisp navy blue background with vibrant accent colors from the university's branding. The atmosphere is official, successful, and visionary, capturing a significant moment of institutional collaboration."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhapTM0fWT_Rd5tAV6fgwDoy1EmQGM8KkcSH-y5WyCURzIZjeqlO1-pZAlOgT7u2AyeNkFWjiycrh2aDeyKopZw1KedYalPTFQmeEHWLf77lXtAtmmeZm0kCh2CVz1EjVnSSot5eEPKPNWpR3-qOn1wzXEhigBE8_SaEmdbzB_5-LXS1AFQCu5OqRJjuyuGDsjb-pZ3jYaOI7yDhpPcWD80Y5-a3X3l9EZBDB5vCQAH8YcnnCsubv4">
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">PRESS
+                                RELEASE</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-label-caps text-outline-variant mb-2">OCT 12, 2024</p>
+                        <h3
+                            class="font-title-md text-title-md text-on-surface mb-3 hover:text-primary transition-colors cursor-pointer">
+                            Pernyataan Sikap LDK Uswah Terkait Isu Kemanusiaan Global</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 line-clamp-3">LDK Uswah UPNVJ secara resmi
+                            mengeluarkan pernyataan sikap dan ajakan solidaritas untuk membantu saudara kita yang
+                            tertimpa musibah.</p>
+                    </div>
+                    <a class="font-label-caps text-primary flex items-center gap-1 group" href="#">
+                        READ MORE <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+                    </a>
+                </article>
+                <!-- Card 5 (Offset Layout) -->
+                <article class="flex flex-col mt-12 md:mt-24">
+                    <div
+                        class="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
+                        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            data-alt="A dynamic action photograph of student volunteers distributing food and aid in a local community setting. The lighting is natural and warm, capturing genuine smiles and expressions of empathy. The style is photojournalistic and impactful, highlighting the human element of service. The color palette incorporates natural earth tones contrasted with the primary blue of the volunteers' vests, symbolizing spiritual duty in action."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPOhcgekXb2XnDQkMmnqUx9PN9UVQOFB7JPY5iHreGFXuC-A9xjYWRnHEWmZGJFIAyOwSxM4lDSLIKcXa4PozNNOdNuj7eDMQwQXVWEg759pA9cVWYvvG-3ot_fWMnPrvyqF9jZrdT5RAy_OSIuSxt93Zg3D5jq2zV75GDdf8S-dbXyzgkSCdfMgH5iygNjhgzMucss7N50P9ducTWcMzn9-NNhGH-rhDmjHUM5TZXdrYDioir7Iz">
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">EVENT</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-label-caps text-outline-variant mb-2">OCT 10, 2024</p>
+                        <h3
+                            class="font-title-md text-title-md text-on-surface mb-3 hover:text-primary transition-colors cursor-pointer">
+                            Social Act: Bakti Sosial Serentak di Lingkungan Kampus</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 line-clamp-3">Rangkuman kegiatan sosial yang
+                            melibatkan ratusan mahasiswa UPNVJ dalam aksi nyata membantu masyarakat sekitar.</p>
+                    </div>
+                    <a class="font-label-caps text-primary flex items-center gap-1 group" href="#">
+                        READ MORE <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+                    </a>
+                </article>
+                <!-- Card 6 -->
+                <article class="flex flex-col">
+                    <div
+                        class="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
+                        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            data-alt="A conceptual digital illustration of a glowing geometric structure floating in a dark blue void, inspired by Islamic patterns. The structure is composed of intricate lines of light that create a 3D architectural form. The style is futuristic and spiritual, using a high-contrast palette of navy, cyan, and white. It represents the intersection of technology, geometry, and faith, conveying a sense of infinite complexity and order."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZiWHJMSyyLyVz2hdOspDA_z69MSIx1PlyLNyB55PCjfUBaQXIdVGv89XAPjz4_dg4LUPpAntaVAfYtVCxaBwMijrTfKysITx_0mqTRLFk3_vMBgE2Qh2_DFqAu_tFLyo_BedL95mGZdCa0hqYRzdQiJnWcuguovD409YxQuDS3LqMom6uiIoCrkUQOIAhEmy2suGZvJjxEtXeNOnIyZv_J2uT_LCfNdvELFoI8gCDujssh4YsB08i">
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">ARTICLE</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-label-caps text-outline-variant mb-2">OCT 05, 2024</p>
+                        <h3
+                            class="font-title-md text-title-md text-on-surface mb-3 hover:text-primary transition-colors cursor-pointer">
+                            Refleksi: Menemukan Ketenangan di Tengah Hiruk Pikuk Kuliah</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 line-clamp-3">Tulisan reflektif tentang
+                            menjaga kesehatan mental dan spiritual sebagai mahasiswa di era informasi yang sangat cepat.
+                        </p>
+                    </div>
+                    <a class="font-label-caps text-primary flex items-center gap-1 group" href="#">
+                        READ MORE <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <!-- Pagination -->
+        <section class="px-margin-desktop mb-24 flex justify-center">
+            <button
+                class="bg-white text-primary border border-on-surface px-12 py-4 font-label-caps brutalist-button flex items-center gap-3 group">
+                LOAD MORE POSTS
+                <span
+                    class="material-symbols-outlined group-hover:rotate-180 transition-transform duration-500">expand_more</span>
+            </button>
+        </section>
+        <!-- CTA Section -->
+        <section class="px-margin-desktop mb-24">
+            <div class="bg-on-surface text-surface-bright p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+                    <svg class="w-full h-full fill-current" viewBox="0 0 100 100">
+                        <path d="M0 0 L100 0 L100 100 Z"></path>
+                    </svg>
+                </div>
+                <div class="relative z-10 max-w-2xl">
+                    <h2 class="font-headline-lg text-headline-lg mb-6">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    <p class="font-body-lg text-body-lg opacity-80 mb-8">Never miss an update. Get the monthly summary
+                        of activities and exclusive articles directly in your inbox.</p>
+                    <form class="flex flex-col md:flex-row gap-4">
+                        <input
+                            class="flex-1 bg-white/10 border-0 border-b-2 border-primary focus:ring-0 text-white placeholder:text-white/50 py-4"
+                            placeholder="Your academic email" type="email">
+                        <button
+                            class="bg-primary text-white font-label-caps px-12 py-4 brutalist-button border-on-surface">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full relative mt-asymmetric-offset bg-on-surface dark:bg-surface-container-lowest border-t border-primary">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-desktop py-asymmetric-offset">
+            <div class="flex flex-col gap-6">
+                <div class="flex items-center gap-4">
+                    <img alt="LDK Uswah Logo" class="h-16 w-16 object-contain"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaHIXxMjucEPIOmR3ZyWMLWCj7H5PzU6MrWHFFEY5YAfFzQqyIigJt5hMqVx39a5lxxsrUMRs9awnfqgCstOTtdiR9c_84sz5YYob4Fz5E3aDbaan5KSIBpcFRHkcpPIRjJ4tQmo6WmOQkQex-9Qy7_fO98YDU2bMYfhNymRM2aax_bSo1IUAum3zTy0zW-SCpDgOH-TPmArAm7p5_VGDgETqBJVt9XIVirC1r8vIEcI25j9e3O5fySMkd3PQ0K_io9A">
+                    <span class="font-headline-lg text-headline-lg text-surface-bright">LDK USWAH</span>
+                </div>
+                <p class="font-body-md text-surface-variant opacity-80 max-w-md">Lembaga Dakwah Kampus Uswah UPN Veteran
+                    Jakarta. Wadah pembinaan karakter dan intelektualitas mahasiswa muslim.</p>
+                <div class="flex gap-4 mt-4">
+                    <a class="text-surface-bright hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                    <a class="text-surface-bright hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">mail</span></a>
+                    <a class="text-surface-bright hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">language</span></a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-gutter">
+                <div class="flex flex-col gap-4"><span class="font-label-caps text-primary-fixed">QUICK LINKS</span><a
+                        class="font-label-caps text-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed transition-opacity"
+                        href="#">Home</a><a
+                        class="font-label-caps text-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed transition-opacity"
+                        href="#">About</a><a
+                        class="font-label-caps text-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed transition-opacity"
+                        href="#">LDF</a><a class="font-label-caps text-primary-fixed font-bold" href="#">News</a></div>
+                <div class="flex flex-col gap-4"><span class="font-label-caps text-primary-fixed">SUPPORT</span><a
+                        class="font-label-caps text-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed transition-opacity"
+                        href="#">Contact</a><a
+                        class="font-label-caps text-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed transition-opacity"
+                        href="#">Privacy Policy</a></div>
+            </div>
+        </div>
+        <div class="px-margin-desktop py-unit border-t border-white/10 text-center md:text-left">
+            <p class="font-label-caps text-surface-variant opacity-50">© 2024 LDK USWAH UPNVJ. Kabinet Qitharah 26. All
+                Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Micro-interactions for news cards
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('h3').classList.add('text-primary');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('h3').classList.remove('text-primary');
+            });
+        });
+
+        // Parallax-ish effect on ornaments
+        window.addEventListener('mousemove', (e) => {
+            const ornaments = document.querySelectorAll('.blurred-ornament');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            ornaments.forEach((orn, idx) => {
+                const speed = (idx + 1) * 20;
+                orn.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
