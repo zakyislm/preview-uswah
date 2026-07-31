@@ -10,9 +10,10 @@ export default function LDF() {
                 <div className="col-span-12 md:col-span-8">
                     <h1 className="font-headline-xl text-headline-xl uppercase mb-8">
                         LEMBAGA DAKWAH<br />
-                        <span className="text-outline">FAKULTAS</span>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0b4c9b] via-[#4a8b8c] to-[#9dc775] drop-shadow-sm">FAKULTAS</span>
                     </h1>
-                    <div className="asymmetric-border md:ml-asymmetric-offset">
+                    <div className="md:ml-8 border-l-4 border-accent pl-8 py-2 relative">
+                        <div className="absolute -left-[10px] top-4 w-4 h-4 rounded-full bg-gradient-to-br from-[#0b4c9b] to-[#4a8b8c] shadow-md"></div>
                         <p className="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
                             LDK Uswah UPNVJ serves as the central umbrella organization, fostering spiritual growth and
                             intellectual leadership across five specialized faculty branches. Each LDF tailors the
@@ -29,9 +30,9 @@ export default function LDF() {
             {/* LDF 1: ASY-SYIFAA */}
             <div className="grid grid-cols-12 gap-gutter group transition-all duration-1000 opacity-100">
                 <div className="col-span-12 md:col-span-5 relative">
-                    <div className="aspect-square bg-surface-container relative border border-primary/20 overflow-hidden">
-                        <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ2lYJ5y7sUildR5Lp5yjpChpXNe7xJCO3pEkbJevtvukSiyciPQ9NRlFjSdwih3TP_-haPFSDHCmIQQbCh7BXQkLozCItFssMsVFZlEe_YNt20k0OMuEIP90gB6n57Z5ruNqmC9MR2aeJzcoZgoPuzu4mh1zMgWOmOqOOGldVJvOSaOcS_-OWnnXjpQFaN5F0gu43ONU5dCJvuUTnxhX0tbBKjISmZGk0J6dlMrq9lCuq5FNRSkia" />
-                        <div className="absolute bottom-0 left-0 bg-primary text-on-primary px-4 py-2 font-label-caps text-label-caps">
+                    <div className="aspect-square bg-surface-container relative rounded-[2.5rem] shadow-xl overflow-hidden group-hover:shadow-2xl transition-all duration-700 border-none">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ2lYJ5y7sUildR5Lp5yjpChpXNe7xJCO3pEkbJevtvukSiyciPQ9NRlFjSdwih3TP_-haPFSDHCmIQQbCh7BXQkLozCItFssMsVFZlEe_YNt20k0OMuEIP90gB6n57Z5ruNqmC9MR2aeJzcoZgoPuzu4mh1zMgWOmOqOOGldVJvOSaOcS_-OWnnXjpQFaN5F0gu43ONU5dCJvuUTnxhX0tbBKjISmZGk0J6dlMrq9lCuq5FNRSkia" />
+                        <div className="absolute bottom-4 left-4 bg-gradient-to-r from-primary to-teal-500 text-white px-6 py-2 font-label-caps text-label-caps rounded-full shadow-lg">
                             Est. Medicine</div>
                     </div>
                 </div>
@@ -62,9 +63,9 @@ export default function LDF() {
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-5">
-                    <div className="aspect-square bg-surface-container relative border border-primary/20 overflow-hidden">
-                        <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsCT7Zbj4EHEh24qFoMGNCb8dE28npHZqBo8N0dD6fqblTF1xSVOFoyEWpSvq4mL0oIPVzwrxAttVf9td6ffL9yfAYDWeeRnNTEp0dSSIFRTW4pSdOEf232NBeAsYGCV5fJwPjlJHvIuLrujsr9rE_XuV48grr0vOhxJWNsR5w_UT-5UtujSvkIXIteAZiylAd_nKahB95S8yoYdFKmKFSUOnUaynr29rduzZZCFbi4kM_OZFSqwOx" />
-                        <div className="absolute bottom-0 right-0 bg-primary text-on-primary px-4 py-2 font-label-caps text-label-caps">
+                    <div className="aspect-square bg-surface-container relative rounded-[2.5rem] shadow-xl overflow-hidden group-hover:shadow-2xl transition-all duration-700 border-none">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsCT7Zbj4EHEh24qFoMGNCb8dE28npHZqBo8N0dD6fqblTF1xSVOFoyEWpSvq4mL0oIPVzwrxAttVf9td6ffL9yfAYDWeeRnNTEp0dSSIFRTW4pSdOEf232NBeAsYGCV5fJwPjlJHvIuLrujsr9rE_XuV48grr0vOhxJWNsR5w_UT-5UtujSvkIXIteAZiylAd_nKahB95S8yoYdFKmKFSUOnUaynr29rduzZZCFbi4kM_OZFSqwOx" />
+                        <div className="absolute bottom-4 right-4 bg-gradient-to-r from-primary to-teal-500 text-white px-6 py-2 font-label-caps text-label-caps rounded-full shadow-lg">
                             Est. Law</div>
                     </div>
                 </div>
@@ -73,9 +74,9 @@ export default function LDF() {
             {/* LDF 3: AN-NAHL */}
             <div className="grid grid-cols-12 gap-gutter group transition-all duration-1000 opacity-100">
                 <div className="col-span-12 md:col-span-5 relative">
-                    <div className="aspect-square bg-surface-container relative border border-primary/20 overflow-hidden">
-                        <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYsX7e_g826XnCVIQKLtI4xloiY2NBnS0ybHEtFW__L4rJBgaXXIw7RrPFHTTGe1cbcPabX46AHUFWgE3i6b36L9DqckFE1e-lUHl-Eonr2q4PzStn2LV-qmHuqqEXaKKSnKgM5ZeqM92xkepEbn6_6bhVsaHLlSchSFw1R-WMnP4s2HUybQH7rcfHDLPwPnquQh8tRXl4RW4crC5OQ7LVKFrD1Y-EhG_hiiaEJcZgSFLh8x6SvUF" />
-                        <div className="absolute bottom-0 left-0 bg-primary text-on-primary px-4 py-2 font-label-caps text-label-caps">
+                    <div className="aspect-square bg-surface-container relative rounded-[2.5rem] shadow-xl overflow-hidden group-hover:shadow-2xl transition-all duration-700 border-none">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYsX7e_g826XnCVIQKLtI4xloiY2NBnS0ybHEtFW__L4rJBgaXXIw7RrPFHTTGe1cbcPabX46AHUFWgE3i6b36L9DqckFE1e-lUHl-Eonr2q4PzStn2LV-qmHuqqEXaKKSnKgM5ZeqM92xkepEbn6_6bhVsaHLlSchSFw1R-WMnP4s2HUybQH7rcfHDLPwPnquQh8tRXl4RW4crC5OQ7LVKFrD1Y-EhG_hiiaEJcZgSFLh8x6SvUF" />
+                        <div className="absolute bottom-4 left-4 bg-gradient-to-r from-primary to-teal-500 text-white px-6 py-2 font-label-caps text-label-caps rounded-full shadow-lg">
                             Est. Economics</div>
                     </div>
                 </div>
@@ -106,9 +107,9 @@ export default function LDF() {
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-5">
-                    <div className="aspect-square bg-surface-container relative border border-primary/20 overflow-hidden">
-                        <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATnoy3BO4jIGAD9v3mU0b9rm1Cblp9MqmTRr0ohyH_jcgDGhX4P3jjNSfhO4HZTI0KJF-67mvyKKWeq7jszn56-5Y8AtE9cnjxp5mixZhJ1OCIVAt49m3G4pL4zlouk_5FXsdWXpjnyeVTAPSha6x3Y6avOfTb8BTHQDJJPlslf_qxAbQMkBB4MGZspeplDSYQePAd76URarJjcXqWpqw5SbxGmIhW281GR1G1d0SovZ1dL5OaA315" />
-                        <div className="absolute bottom-0 right-0 bg-primary text-on-primary px-4 py-2 font-label-caps text-label-caps">
+                    <div className="aspect-square bg-surface-container relative rounded-[2.5rem] shadow-xl overflow-hidden group-hover:shadow-2xl transition-all duration-700 border-none">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATnoy3BO4jIGAD9v3mU0b9rm1Cblp9MqmTRr0ohyH_jcgDGhX4P3jjNSfhO4HZTI0KJF-67mvyKKWeq7jszn56-5Y8AtE9cnjxp5mixZhJ1OCIVAt49m3G4pL4zlouk_5FXsdWXpjnyeVTAPSha6x3Y6avOfTb8BTHQDJJPlslf_qxAbQMkBB4MGZspeplDSYQePAd76URarJjcXqWpqw5SbxGmIhW281GR1G1d0SovZ1dL5OaA315" />
+                        <div className="absolute bottom-4 right-4 bg-gradient-to-r from-primary to-teal-500 text-white px-6 py-2 font-label-caps text-label-caps rounded-full shadow-lg">
                             Est. Engineering</div>
                     </div>
                 </div>
@@ -117,9 +118,9 @@ export default function LDF() {
             {/* LDF 5: AL-HAKIM */}
             <div className="grid grid-cols-12 gap-gutter group transition-all duration-1000 opacity-100">
                 <div className="col-span-12 md:col-span-5 relative">
-                    <div className="aspect-square bg-surface-container relative border border-primary/20 overflow-hidden">
-                        <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATgx-DwuZbaYBuHk5Co7j36HEymjq7ujQHDX-cxDw5aCkybPTo5_ECdeVzeV2n_4pK0iodVE5wPE6gCef-bd5q_M6fIhtzpMDLISOUfniNDiH01ge9zIXzzGj6k6Q_Ve-swnlJQGMnmxd9X5-ezAo_bXcCH3tf-wo4kfhP96a74T7UftqzEiAMw7Qx4qkGR2wgqV22nRqh7ldTii5UK9j5MNafviaVu4lDzi7dOMAsaICK5hnie5n7" />
-                        <div className="absolute bottom-0 left-0 bg-primary text-on-primary px-4 py-2 font-label-caps text-label-caps">
+                    <div className="aspect-square bg-surface-container relative rounded-[2.5rem] shadow-xl overflow-hidden group-hover:shadow-2xl transition-all duration-700 border-none">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATgx-DwuZbaYBuHk5Co7j36HEymjq7ujQHDX-cxDw5aCkybPTo5_ECdeVzeV2n_4pK0iodVE5wPE6gCef-bd5q_M6fIhtzpMDLISOUfniNDiH01ge9zIXzzGj6k6Q_Ve-swnlJQGMnmxd9X5-ezAo_bXcCH3tf-wo4kfhP96a74T7UftqzEiAMw7Qx4qkGR2wgqV22nRqh7ldTii5UK9j5MNafviaVu4lDzi7dOMAsaICK5hnie5n7" />
+                        <div className="absolute bottom-4 left-4 bg-gradient-to-r from-primary to-teal-500 text-white px-6 py-2 font-label-caps text-label-caps rounded-full shadow-lg">
                             Est. Social Sciences</div>
                     </div>
                 </div>
@@ -147,8 +148,8 @@ export default function LDF() {
                 Join the LDF within your faculty and start your journey of spiritual and professional development today.
             </p>
             <div className="flex justify-center gap-6 flex-wrap">
-                <button className="px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps brutalist-button border border-on-surface">Contact Coordinator</button>
-                <button className="px-8 py-4 bg-transparent text-primary border-2 border-primary font-label-caps text-label-caps transition-all hover:bg-primary hover:text-on-primary">Learn More</button>
+                <button className="px-10 py-4 bg-gradient-to-r from-primary to-teal-500 text-white font-label-caps text-label-caps rounded-full shadow-lg hover:shadow-xl transition-all">Contact Coordinator</button>
+                <button className="px-10 py-4 bg-white text-primary border-2 border-primary/20 font-label-caps text-label-caps rounded-full transition-all hover:border-primary shadow-sm">Learn More</button>
             </div>
         </section>
     </main>

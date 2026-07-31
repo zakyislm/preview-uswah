@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 
 export default function News() {
   return (
-    <main className="relative min-h-screen overflow-hidden pt-32">
+    <main className="relative min-h-screen overflow-hidden">
         {/* Background Ornaments */}
         <div className="absolute top-20 -right-20 w-96 h-96 bg-primary-container rounded-full blurred-ornament"></div>
         <div className="absolute bottom-40 -left-20 w-80 h-80 bg-secondary-container rounded-full blurred-ornament"></div>
@@ -12,8 +12,11 @@ export default function News() {
         {/* Hero Section */}
         <section className="px-margin-desktop pt-24 pb-16 relative z-10">
             <div className="max-w-4xl">
-                <h1 className="font-headline-xl text-headline-xl text-primary mb-6">INFORMASI &amp; BERITA</h1>
-                <div className="asymmetric-grid-step border-l-4 border-primary pl-8 py-2">
+                <h1 className="font-headline-xl text-headline-xl mb-6">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0b4c9b] via-[#4a8b8c] to-[#9dc775] drop-shadow-sm">INFORMASI &amp; BERITA</span>
+                </h1>
+                <div className="border-l-4 border-accent pl-8 py-2 relative">
+                    <div className="absolute -left-[10px] top-4 w-4 h-4 rounded-full bg-gradient-to-br from-[#0b4c9b] to-[#4a8b8c] shadow-md"></div>
                     <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
                         Keep up with the spiritual pulse of UPNVJ. Get the latest announcements, event summaries, and
                         intellectual reflections from Kabinet Qitharah 26.
@@ -24,16 +27,16 @@ export default function News() {
 
         {/* Featured News */}
         <section className="px-margin-desktop mb-24 relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-0 relative">
-                <div className="md:col-span-7 aspect-[16/9] bg-primary relative overflow-hidden group">
-                    <img className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4wpmfktF5zWelxvIxvKzKkxRk6mj-2GLELZ6pZ5oWYrsXTk9yhy2z6mil48-oyu0i0-U1drVBN7bRIOWm7J9bGMxzEI7M2SNan7ta217O1wr189ZRorwDgNpS_yAPrnKufrP4mMBX_ESvN93q1E1OdyZVevTWjwqdraLn5vlGExZqugkA8tLn_Qa5WOoO7f80YNd26kUG9IXQXhPrkL1hXptMkGWF4rpjpZhNz8VoqxWykKf80j9P" />
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-0 relative items-stretch bg-white rounded-[2rem] shadow-xl overflow-hidden transition-transform duration-500">
+                <div className="md:col-span-7 h-full min-h-[300px] bg-primary relative overflow-hidden group">
+                    <img className="w-full h-full object-cover grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4wpmfktF5zWelxvIxvKzKkxRk6mj-2GLELZ6pZ5oWYrsXTk9yhy2z6mil48-oyu0i0-U1drVBN7bRIOWm7J9bGMxzEI7M2SNan7ta217O1wr189ZRorwDgNpS_yAPrnKufrP4mMBX_ESvN93q1E1OdyZVevTWjwqdraLn5vlGExZqugkA8tLn_Qa5WOoO7f80YNd26kUG9IXQXhPrkL1hXptMkGWF4rpjpZhNz8VoqxWykKf80j9P" />
                     <div className="absolute top-0 left-0 p-6">
-                        <span className="bg-primary text-white font-label-caps px-4 py-1">Featured Announcement</span>
+                        <span className="bg-accent text-white font-label-caps px-4 py-2 rounded-full shadow-md">Featured Announcement</span>
                     </div>
                 </div>
-                <div className="md:col-span-5 bg-white p-12 flex flex-col justify-center border-t md:border-t-0 md:border-l border-on-surface">
-                    <p className="font-label-caps text-primary mb-4">October 24, 2024</p>
-                    <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">Grand Launching Kabinet Qitharah 26: Resonansi Dakwah Kampus</h2>
+                <div className="md:col-span-5 bg-white p-12 flex flex-col justify-center">
+                    <p className="font-label-caps text-accent mb-4 font-bold">October 24, 2024</p>
+                    <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6 hover:text-primary transition-colors cursor-pointer">Grand Launching Kabinet Qitharah 26: Resonansi Dakwah Kampus</h2>
                     <p className="font-body-md text-on-surface-variant mb-8">Welcoming a new era of spiritual leadership and academic excellence. Read about our vision for the upcoming year and the key programs we are launching to serve the UPNVJ community.</p>
                     <a className="inline-flex items-center gap-2 font-label-caps text-primary group" href="#">
                         Read the Full Article
@@ -54,7 +57,7 @@ export default function News() {
                     <button className="font-label-caps text-on-surface-variant hover:text-primary transition-colors">Press Release</button>
                 </div>
                 <div className="w-full md:w-80 relative group">
-                    <input className="w-full bg-transparent border-0 border-b-2 border-primary focus:ring-0 px-0 py-2 font-body-md placeholder:text-outline" placeholder="Search archives..." type="text" />
+                    <input className="w-full bg-transparent border-0 border-b border-primary outline-none focus:outline-none focus:ring-0 px-0 py-2 font-body-md placeholder:text-outline" placeholder="Search archives..." type="text" />
                     <span className="material-symbols-outlined absolute right-0 top-2 text-primary">search</span>
                 </div>
             </div>
@@ -65,10 +68,10 @@ export default function News() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-gutter gap-y-16">
                 {/* Card 1 */}
                 <article className="flex flex-col">
-                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
-                        <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipYxccnnLNED-z-Ck18hrZomsWkc68JxL_9glHgzKYcKPdc2LfHYvxk3cX7rLQrygwP-PYTK98CwVfWWn6W2R7aN9ixkt5JENE8uD8bJR3I6_gKLc6MEL-OLwPTTo6XNu0Uk4_QzgVBi42ZNi2ZO-RMZVGnuqHYNvaXSiuZr9_VWW5aQWZpUbuMaGzS2XRlOMqTzHI9h_IpR2oyYbbjIy1MRMw34gs9jBliUmBpVfQhRRDgapCvpR" />
+                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative rounded-2xl shadow-md">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipYxccnnLNED-z-Ck18hrZomsWkc68JxL_9glHgzKYcKPdc2LfHYvxk3cX7rLQrygwP-PYTK98CwVfWWn6W2R7aN9ixkt5JENE8uD8bJR3I6_gKLc6MEL-OLwPTTo6XNu0Uk4_QzgVBi42ZNi2ZO-RMZVGnuqHYNvaXSiuZr9_VWW5aQWZpUbuMaGzS2XRlOMqTzHI9h_IpR2oyYbbjIy1MRMw34gs9jBliUmBpVfQhRRDgapCvpR" />
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">Article</span>
+                            <span className="bg-white/90 backdrop-blur-md text-primary font-label-caps px-4 py-1 rounded-full shadow-sm">Article</span>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -83,10 +86,10 @@ export default function News() {
                 
                 {/* Card 2 */}
                 <article className="flex flex-col mt-12 md:mt-0">
-                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
-                        <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUFks56Ih9UFuMkkHkPQ1u_E7vCFdH4uDo2Rsrda5vJaQHyRm3kxEBdkfEzt81K_gQz_wRKarnvCOhBdVwRjUwrHN1QfkhpwRsbFppTDOHqW87YdxgYfDvg2aAZDUsl8KB4QbyKcoWT4my-C0pS3HlGQppdW84iPk2npFhsPi5YZvNfnDUIDSdkXKY7Uvgkpt67cQBGQ9qU3A5oken3EmiEw54_5C-qi6_Az7voQ_ljPSSwNOz40jz" />
+                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative rounded-2xl shadow-md">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUFks56Ih9UFuMkkHkPQ1u_E7vCFdH4uDo2Rsrda5vJaQHyRm3kxEBdkfEzt81K_gQz_wRKarnvCOhBdVwRjUwrHN1QfkhpwRsbFppTDOHqW87YdxgYfDvg2aAZDUsl8KB4QbyKcoWT4my-C0pS3HlGQppdW84iPk2npFhsPi5YZvNfnDUIDSdkXKY7Uvgkpt67cQBGQ9qU3A5oken3EmiEw54_5C-qi6_Az7voQ_ljPSSwNOz40jz" />
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">Event</span>
+                            <span className="bg-white/90 backdrop-blur-md text-primary font-label-caps px-4 py-1 rounded-full shadow-sm">Event</span>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -101,10 +104,10 @@ export default function News() {
 
                 {/* Card 3 */}
                 <article className="flex flex-col">
-                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
-                        <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzixyIwatxNMGnStHQzLdVA5H4MWRMQPwq07GZjjCepKP2XErrvaMRQqx6J0vbFGt4wcuad2ewF57B6X_wNGWigifZ5GzUx23fM8Zd7xYvi3AEeWWvtdLSr4A8VjhgoJCPpVfBTvbOpi8gm-FXwo0VeG_1vlzP7B0fQEK7HeJIRrpbOfMuBx0u9ahAh6MuMCkLyT15vodshu8cbuEijfSss0-h_J4l0IcOPWJhMRF5lCy0FOZ8bjMO" />
+                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative rounded-2xl shadow-md">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzixyIwatxNMGnStHQzLdVA5H4MWRMQPwq07GZjjCepKP2XErrvaMRQqx6J0vbFGt4wcuad2ewF57B6X_wNGWigifZ5GzUx23fM8Zd7xYvi3AEeWWvtdLSr4A8VjhgoJCPpVfBTvbOpi8gm-FXwo0VeG_1vlzP7B0fQEK7HeJIRrpbOfMuBx0u9ahAh6MuMCkLyT15vodshu8cbuEijfSss0-h_J4l0IcOPWJhMRF5lCy0FOZ8bjMO" />
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">Kajian</span>
+                            <span className="bg-white/90 backdrop-blur-md text-primary font-label-caps px-4 py-1 rounded-full shadow-sm">Kajian</span>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -119,10 +122,10 @@ export default function News() {
 
                 {/* Card 4 */}
                 <article className="flex flex-col">
-                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
-                        <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhapTM0fWT_Rd5tAV6fgwDoy1EmQGM8KkcSH-y5WyCURzIZjeqlO1-pZAlOgT7u2AyeNkFWjiycrh2aDeyKopZw1KedYalPTFQmeEHWLf77lXtAtmmeZm0kCh2CVz1EjVnSSot5eEPKPNWpR3-qOn1wzXEhigBE8_SaEmdbzB_5-LXS1AFQCu5OqRJjuyuGDsjb-pZ3jYaOI7yDhpPcWD80Y5-a3X3l9EZBDB5vCQAH8YcnnCsubv4" />
+                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative rounded-2xl shadow-md">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhapTM0fWT_Rd5tAV6fgwDoy1EmQGM8KkcSH-y5WyCURzIZjeqlO1-pZAlOgT7u2AyeNkFWjiycrh2aDeyKopZw1KedYalPTFQmeEHWLf77lXtAtmmeZm0kCh2CVz1EjVnSSot5eEPKPNWpR3-qOn1wzXEhigBE8_SaEmdbzB_5-LXS1AFQCu5OqRJjuyuGDsjb-pZ3jYaOI7yDhpPcWD80Y5-a3X3l9EZBDB5vCQAH8YcnnCsubv4" />
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">Press Release</span>
+                            <span className="bg-white/90 backdrop-blur-md text-primary font-label-caps px-4 py-1 rounded-full shadow-sm">Press Release</span>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -137,10 +140,10 @@ export default function News() {
 
                 {/* Card 5 (Offset Layout) */}
                 <article className="flex flex-col mt-12 md:mt-24">
-                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
-                        <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPOhcgekXb2XnDQkMmnqUx9PN9UVQOFB7JPY5iHreGFXuC-A9xjYWRnHEWmZGJFIAyOwSxM4lDSLIKcXa4PozNNOdNuj7eDMQwQXVWEg759pA9cVWYvvG-3ot_fWMnPrvyqF9jZrdT5RAy_OSIuSxt93Zg3D5jq2zV75GDdf8S-dbXyzgkSCdfMgH5iygNjhgzMucss7N50P9ducTWcMzn9-NNhGH-rhDmjHUM5TZXdrYDioir7Iz" />
+                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative rounded-2xl shadow-md">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPOhcgekXb2XnDQkMmnqUx9PN9UVQOFB7JPY5iHreGFXuC-A9xjYWRnHEWmZGJFIAyOwSxM4lDSLIKcXa4PozNNOdNuj7eDMQwQXVWEg759pA9cVWYvvG-3ot_fWMnPrvyqF9jZrdT5RAy_OSIuSxt93Zg3D5jq2zV75GDdf8S-dbXyzgkSCdfMgH5iygNjhgzMucss7N50P9ducTWcMzn9-NNhGH-rhDmjHUM5TZXdrYDioir7Iz" />
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">Event</span>
+                            <span className="bg-white/90 backdrop-blur-md text-primary font-label-caps px-4 py-1 rounded-full shadow-sm">Event</span>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -155,10 +158,10 @@ export default function News() {
 
                 {/* Card 6 */}
                 <article className="flex flex-col">
-                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative border border-on-surface">
-                        <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZiWHJMSyyLyVz2hdOspDA_z69MSIx1PlyLNyB55PCjfUBaQXIdVGv89XAPjz4_dg4LUPpAntaVAfYtVCxaBwMijrTfKysITx_0mqTRLFk3_vMBgE2Qh2_DFqAu_tFLyo_BedL95mGZdCa0hqYRzdQiJnWcuguovD409YxQuDS3LqMom6uiIoCrkUQOIAhEmy2suGZvJjxEtXeNOnIyZv_J2uT_LCfNdvELFoI8gCDujssh4YsB08i" />
+                    <div className="aspect-[4/3] bg-surface-container-high mb-6 overflow-hidden relative rounded-2xl shadow-md">
+                        <img className="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipYxccnnLNED-z-Ck18hrZomsWkc68JxL_9glHgzKYcKPdc2LfHYvxk3cX7rLQrygwP-PYTK98CwVfWWn6W2R7aN9ixkt5JENE8uD8bJR3I6_gKLc6MEL-OLwPTTo6XNu0Uk4_QzgVBi42ZNi2ZO-RMZVGnuqHYNvaXSiuZr9_VWW5aQWZpUbuMaGzS2XRlOMqTzHI9h_IpR2oyYbbjIy1MRMw34gs9jBliUmBpVfQhRRDgapCvpR" />
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/90 backdrop-blur-md text-on-surface font-label-caps px-3 py-1 border border-on-surface">Article</span>
+                            <span className="bg-white/90 backdrop-blur-md text-primary font-label-caps px-4 py-1 rounded-full shadow-sm">Article</span>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -178,7 +181,7 @@ export default function News() {
           "px-margin-desktop mb-24",
           "flex justify-center relative z-10"
         )}>
-            <button className="bg-white text-primary border border-on-surface px-12 py-4 font-label-caps brutalist-button flex items-center gap-3 group">
+            <button className="bg-white text-primary px-12 py-4 font-label-caps rounded-full shadow-lg hover:shadow-xl transition-all flex items-center gap-3 group font-bold">
                 Load More Posts
                 <span className="material-symbols-outlined group-hover:rotate-180 transition-transform duration-500">expand_more</span>
             </button>
@@ -189,18 +192,21 @@ export default function News() {
           "px-margin-desktop mb-24",
           "relative z-10"
         )}>
-            <div className="bg-on-surface text-surface-bright p-6 md:p-16 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
-                    <svg className="w-full h-full fill-current" viewBox="0 0 100 100">
-                        <path d="M0 0 L100 0 L100 100 Z"></path>
-                    </svg>
+            <div className="bg-gradient-to-br from-[#0b4c9b] to-[#4a8b8c] text-white p-6 md:p-16 relative overflow-hidden rounded-[3rem] shadow-2xl">
+                <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none overflow-hidden">
+                    <div className="absolute inset-0 bg-grid-ornament opacity-50"></div>
+                </div>
+                {/* Floating Elements */}
+                <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                    <div className="absolute -right-20 -top-20 w-[400px] h-[400px] rounded-full bg-white/5 blur-3xl animate-float"></div>
+                    <div className="absolute right-32 top-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-yellow-300/10 blur-2xl animate-float" style={{animationDelay: '1s'}}></div>
                 </div>
                 <div className="relative z-10 max-w-2xl">
                     <h2 className="font-headline-lg text-headline-lg mb-6">SUBSCRIBE TO OUR NEWSLETTER</h2>
-                    <p className="font-body-lg text-body-lg opacity-80 mb-8">Never miss an update. Get the monthly summary of activities and exclusive articles directly in your inbox.</p>
+                    <p className="font-body-lg text-body-lg opacity-90 mb-8">Never miss an update. Get the monthly summary of activities and exclusive articles directly in your inbox.</p>
                     <form className="flex flex-col md:flex-row gap-4">
-                        <input className="flex-1 bg-white/10 border-0 border-b-2 border-primary focus:ring-0 text-white placeholder:text-white/50 py-4 px-4" placeholder="Your academic email" type="email" />
-                        <button className="bg-primary text-white font-label-caps px-12 py-4 brutalist-button border-on-surface">Subscribe</button>
+                        <input className="flex-1 bg-white/20 border-2 border-transparent focus:border-white focus:bg-white/30 text-white placeholder:text-white/70 py-4 px-8 rounded-full outline-none transition-all" placeholder="Your academic email" type="email" />
+                        <button className="bg-yellow-400 text-blue-900 font-label-caps px-12 py-4 rounded-full shadow-lg transition-transform font-bold">Subscribe</button>
                     </form>
                 </div>
             </div>

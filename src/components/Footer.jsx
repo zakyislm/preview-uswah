@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full relative bg-on-surface border-t border-primary">
+    <footer className="w-full relative bg-on-primary-fixed border-t border-primary">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-asymmetric-offset">
         <div className="flex flex-col gap-6">
-          <div className="flex items-center gap-4">
-            <Image alt="LDK Uswah Logo" width={64} height={64} className="object-contain" src="/logo.png" />
-            <span className="font-headline-lg text-headline-lg text-surface-bright">LDK USWAH</span>
+          <div className="flex items-center gap-4 md:gap-6">
+            <Image alt="LDK Uswah Logo" width={64} height={64} className="shrink-0 object-contain w-12 h-12 md:w-16 md:h-16 brightness-0 invert" src="/logo.png" />
+            <h1 className="sr-only">LDK USWAH</h1>
+            <p className="font-body-md text-surface-variant opacity-80 max-w-sm">Lembaga Dakwah Kampus Uswah UPN Veteran Jakarta. Wadah pembinaan karakter dan intelektualitas mahasiswa muslim.</p>
           </div>
-          <p className="font-body-md text-surface-variant opacity-80 max-w-md">Lembaga Dakwah Kampus Uswah UPN Veteran Jakarta. Wadah pembinaan karakter dan intelektualitas mahasiswa muslim.</p>
           <div className="flex gap-4 mt-4">
             <a className="text-surface-bright hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined">share</span></a>
             <a className="text-surface-bright hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined">mail</span></a>

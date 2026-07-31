@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-full mx-auto relative z-20 bg-surface-bright">
         <div className="flex items-center gap-4">
           <Image alt="LDK Uswah Logo" width={48} height={48} className="object-contain" src="/logo.png" />
-          <span className="font-headline-lg text-2xl md:text-headline-lg text-primary">LDK USWAH</span>
+          <h1 className="sr-only">LDK USWAH UPNVJ</h1>
         </div>
         <div className="hidden md:flex gap-gutter items-center">
           {navLinks.map((link) => {
@@ -54,7 +54,9 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <button className="bg-primary text-on-primary px-6 py-2 brutalist-button font-label-caps">Join Us</button>
+          <button className="bg-primary text-on-primary p-2 brutalist-button flex items-center justify-center">
+            <span className="material-symbols-outlined">settings</span>
+          </button>
         </div>
         <button 
           className="md:hidden text-primary"
@@ -86,7 +88,9 @@ export default function Navbar() {
           );
         })}
         <div className="px-margin-mobile pt-6 pb-2">
-          <button className="w-full bg-primary text-on-primary px-6 py-3 brutalist-button font-label-caps">Join Us</button>
+          <button className="w-full bg-primary text-on-primary px-6 py-3 brutalist-button font-label-caps flex items-center justify-center gap-2">
+            <span className="material-symbols-outlined">settings</span> Settings
+          </button>
         </div>
       </div>
     </nav>
