@@ -68,10 +68,7 @@ export default function Home() {
                             LDK Uswah adalah wadah perjuangan dakwah kampus di UPN Veteran Jakarta yang berkomitmen mencetak generasi rabbani dengan jiwa patriotik dan intelektualitas tinggi.
                         </div>
                         <div className="flex flex-wrap gap-4">
-                            <Link className="bg-on-surface text-surface font-label-caps py-4 px-8 brutalist-button text-xs" href="/about">Pelajari Selengkapnya</Link>
-                            <div className="flex items-center gap-4 px-4 bg-surface/50 backdrop-blur-sm border border-primary/10">
-                                <span className="font-label-caps text-primary text-[10px]">EST. 1998</span>
-                            </div>
+                            <Link className="bg-gradient-to-r from-[#0b4c9b] to-[#4a8b8c] hover:from-[#4a8b8c] hover:to-[#9dc775] text-white font-label-caps py-3.5 px-9 rounded-full text-xs font-bold shadow-md hover:shadow-lg transition-all duration-300" href="#contact">Bergabung</Link>
                         </div>
                     </div>
                     <div className="md:col-span-5 relative flex items-center justify-center py-10">
@@ -327,13 +324,78 @@ export default function Home() {
                 </div>
 
 
-                {/* SVG Wave at the bottom of LDF Section to transition to Informasi Section */}
+                {/* SVG Wave at the bottom of LDF Section with matching grid ornament so UswahKeren visually appears overlapped */}
                 <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-30">
                     <svg className="relative block w-full h-[50px] md:h-[80px]" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current text-surface" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" />
                     </svg>
+                    <div className="absolute inset-0 bg-grid-ornament opacity-[0.04] pointer-events-none" style={{
+                        WebkitMaskImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 120"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="black"/></svg>')`,
+                        maskImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 120"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="black"/></svg>')`,
+                        WebkitMaskSize: '100% 100%',
+                        maskSize: '100% 100%'
+                    }}></div>
                 </div>
             </section>
+
+            {/* CTA #UswahKeren Section */}
+            <section className={clsx(
+                "pt-[80px] md:pt-[120px] pb-[160px] md:pb-[200px] px-margin-desktop text-center bg-surface relative overflow-hidden z-10"
+            )}>
+                <div className="absolute inset-0 bg-grid-ornament opacity-[0.04] pointer-events-none z-10" style={{
+                    WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 70%, transparent 100%)',
+                    maskImage: 'linear-gradient(to bottom, black 0%, black 70%, transparent 100%)'
+                }}></div>
+
+                {/* Soft Glowing Colorful Blobs */}
+                <div className="absolute -left-32 top-1/4 w-[500px] h-[500px] bg-gradient-to-tr from-[#0b4c9b]/15 to-transparent rounded-full blur-[100px] pointer-events-none z-0"></div>
+                <div className="absolute -right-32 bottom-1/4 w-[450px] h-[450px] bg-gradient-to-bl from-[#4a8b8c]/15 via-[#9dc775]/10 to-transparent rounded-full blur-[90px] pointer-events-none z-0"></div>
+
+                {/* Geometric Fret Corner Watermarks */}
+                <div className="absolute -bottom-16 -left-16 text-[#0b4c9b] opacity-[0.03] transform scale-125 rotate-45 pointer-events-none z-0">
+                    <GeometricFret />
+                </div>
+                <div className="absolute -top-16 -right-16 text-[#4a8b8c] opacity-[0.03] transform scale-125 -rotate-12 pointer-events-none z-0">
+                    <GeometricFret />
+                </div>
+
+                {/* Floating Ornaments & Glowing Sparkles */}
+                <Clover className="absolute bottom-20 left-12 md:left-24 w-16 h-16 text-[#4a8b8c]/35 -rotate-12 animate-float pointer-events-none z-10" style={{ animationDelay: '0.3s' }} />
+                <StarMotif className="absolute top-24 right-12 md:right-28 w-12 h-12 text-[#9dc775]/45 rotate-12 animate-float pointer-events-none z-10" style={{ animationDelay: '1s' }} />
+
+                {/* Top Left Yellow Sparkle + Glow */}
+                <div className="absolute top-20 left-16 md:left-36 w-12 h-12 bg-yellow-300/35 rounded-full blur-lg animate-float pointer-events-none z-0" style={{ animationDelay: '0.5s' }}></div>
+                <Sparkle className="absolute top-22 left-20 md:left-40 w-7 h-7 text-yellow-500/75 animate-float pointer-events-none drop-shadow-sm z-10" style={{ animationDelay: '0.6s' }} />
+
+                {/* Mid-right Clover with Soft Glow */}
+                <div className="absolute bottom-36 right-[16%] w-16 h-16 bg-[#4a8b8c]/25 rounded-full blur-xl animate-float pointer-events-none z-0" style={{ animationDelay: '1.8s' }}></div>
+                <Clover className="absolute bottom-40 right-[18%] w-9 h-9 text-[#4a8b8c]/60 animate-float pointer-events-none drop-shadow-sm z-10" style={{ animationDelay: '2s' }} />
+
+                {/* Scattered Stars, Sparkles, and Dots */}
+                <StarMotif className="absolute top-1/2 left-[18%] w-6 h-6 text-[#0b4c9b]/35 animate-float pointer-events-none z-10" style={{ animationDelay: '1.4s' }} />
+                <Sparkle className="absolute top-1/3 right-1/4 w-5 h-5 text-yellow-500/60 animate-pulse pointer-events-none z-10" style={{ animationDelay: '0.9s' }} />
+                <StarMotif className="absolute bottom-1/3 left-1/3 w-4 h-4 text-[#9dc775]/50 animate-float pointer-events-none z-10" style={{ animationDelay: '2.5s' }} />
+
+                {/* Vertical Decorative Text */}
+                <div className="hidden lg:flex absolute top-1/2 left-8 -translate-y-1/2 flex-col gap-32 items-center text-primary/40 font-label-caps tracking-widest text-sm" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+                    <span>KABINET QITHARAH</span>
+                </div>
+
+                <h2 className="font-display-decorative text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#0b4c9b] via-[#4a8b8c] to-[#9dc775] mb-6 drop-shadow-sm relative z-10">#UswahKeren</h2>
+                <p className="font-headline-xl text-headline-xl text-outline absolute left-1/2 -translate-x-1/2 bottom-[140px] md:bottom-[160px] opacity-[0.1] whitespace-nowrap pointer-events-none z-0">
+                    USWAH MODERNIST • KABINET QITHARAH 26</p>
+                <div className="max-w-2xl mx-auto relative z-10">
+                    <p className="font-body-lg text-body-lg mb-8 text-on-surface-variant">Ingin tahu lebih banyak tentang kegiatan harian kami? Ikuti perjalanan kami di media sosial atau kunjungi sekretariat kami.</p>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <button className="bg-gradient-to-r from-[#0b4c9b] to-[#4a8b8c] hover:from-[#4a8b8c] hover:to-[#9dc775] text-white px-9 py-3.5 rounded-full font-label-caps shadow-md hover:shadow-xl transition-all font-bold text-xs">Lihat Program Kerja</button>
+                        <button className="bg-white border-2 border-[#4a8b8c]/40 text-primary px-9 py-3.5 rounded-full font-label-caps shadow-sm hover:border-[#4a8b8c] transition-all font-bold text-xs">Hubungi Kami</button>
+                    </div>
+                </div>
+
+                {/* Smooth fading transition into Informasi Section */}
+                <div className="absolute bottom-0 left-0 right-0 h-[100px] md:h-[140px] bg-gradient-to-b from-transparent to-surface pointer-events-none z-10"></div>
+            </section>
+
             {/* Informasi Section */}
             <section className="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface relative overflow-hidden">
                 {/* Latar Belakang / Ornamen (Z-0) */}
@@ -358,7 +420,7 @@ export default function Home() {
                         <StarMotif className="absolute -top-2 left-64 w-3 h-3 text-primary/40 animate-pulse" />
                         <StarMotif className="absolute top-8 -right-8 w-8 h-8 text-secondary/30" />
 
-                        <h2 className="font-headline-xl text-primary uppercase text-5xl md:text-6xl text-headline-xl">Informasi Terbaru</h2>
+                        <h2 className="font-headline-xl bg-clip-text text-transparent bg-gradient-to-r from-[#4a8b8c] to-[#9dc775] uppercase text-5xl md:text-6xl text-headline-xl">Informasi Terbaru</h2>
                         <Link className="font-label-caps text-primary underline underline-offset-4 decoration-2" href="/news">Lihat Semua</Link>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -432,7 +494,54 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section >
-        </main >
+            </section>
+
+            {/* Newsletter CTA Section */}
+            <section className="px-margin-mobile md:px-margin-desktop my-24 relative z-10">
+                <div className="bg-gradient-to-br from-[#0b4c9b] via-[#216583] to-[#4a8b8c] text-white p-8 md:p-16 relative overflow-hidden rounded-[3rem] shadow-2xl border border-white/10">
+                    <div className="absolute top-0 right-0 w-full md:w-2/3 h-full opacity-15 pointer-events-none overflow-hidden">
+                        <div className="absolute inset-0 bg-grid-ornament opacity-60"></div>
+                    </div>
+                    {/* Floating Glow & Background Elements */}
+                    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                        <div className="absolute -right-20 -top-20 w-[400px] h-[400px] rounded-full bg-cyan-300/15 blur-3xl animate-float"></div>
+                        <div className="absolute right-32 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-[#9dc775]/20 blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+                    </div>
+
+                    {/* Rich Right-side Ornaments & Geometric Composition */}
+                    <div className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none overflow-hidden hidden lg:block z-0">
+                        {/* Geometric Fret Pattern Watermark */}
+                        <div className="absolute -right-16 -bottom-16 text-white/10 transform scale-150 rotate-12">
+                            <GeometricFret />
+                        </div>
+                        
+                        {/* Concentric Decorative Rings & Center Clover */}
+                        <div className="absolute top-1/2 right-[12%] -translate-y-1/2 w-[320px] h-[320px] border border-white/20 rounded-full flex items-center justify-center shadow-lg">
+                            <div className="w-[240px] h-[240px] border border-dashed border-white/30 rounded-full flex items-center justify-center animate-[spin_60s_linear_infinite]">
+                                <div className="w-[160px] h-[160px] bg-white/10 backdrop-blur-md rounded-full border border-white/25 flex items-center justify-center shadow-inner">
+                                    <Clover className="w-24 h-24 text-cyan-200/60 rotate-12 animate-pulse" />
+                                </div>
+                            </div>
+                            <StarMotif className="absolute top-2 right-6 w-9 h-9 text-sky-200/80 drop-shadow-md animate-float" />
+                            <Sparkle className="absolute bottom-4 left-6 w-7 h-7 text-white/90 animate-pulse" />
+                        </div>
+
+                        {/* Additional Floating Motifs */}
+                        <Clover className="absolute top-10 left-[15%] w-14 h-14 text-white/25 -rotate-12 animate-float" style={{ animationDelay: '0.5s' }} />
+                        <StarMotif className="absolute bottom-12 left-[25%] w-12 h-12 text-cyan-200/40 rotate-45 animate-float" style={{ animationDelay: '1.5s' }} />
+                        <Sparkle className="absolute top-24 right-10 w-6 h-6 text-white/70 animate-ping" style={{ animationDuration: '4s' }} />
+                    </div>
+
+                    <div className="relative z-10 max-w-2xl">
+                        <h2 className="font-headline-lg font-normal text-4xl md:text-5xl uppercase mb-6 tracking-normal text-transparent bg-clip-text bg-gradient-to-r from-sky-200 via-cyan-100 to-white drop-shadow-sm">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                        <p className="font-jakarta text-base md:text-lg text-slate-100 opacity-90 mb-8 leading-relaxed">Never miss an update. Get the monthly summary of activities and exclusive articles directly in your inbox.</p>
+                        <form className="flex flex-col sm:flex-row gap-4">
+                            <input className="flex-1 bg-white/15 border border-white/30 focus:border-white focus:bg-white/25 text-white placeholder:text-white/70 py-4 px-8 rounded-full outline-none transition-all font-jakarta text-sm backdrop-blur-sm" placeholder="Your academic email" type="email" />
+                            <button className="bg-white hover:bg-gradient-to-r hover:from-cyan-50 hover:to-white text-[#0b4c9b] font-label-caps px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all font-bold text-xs border border-white/50">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
     )
 };
