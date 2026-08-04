@@ -1,0 +1,92 @@
+{
+  ".agentico/public/var.json": {
+    "mtime": 1785422052.10172,
+    "ast_hash": "c30ece08bf13af39663bbea8c6040cfc",
+    "semantic_hash": "c30ece08bf13af39663bbea8c6040cfc"
+  },
+  ".vscode/settings.json": {
+    "mtime": 1785428300.8939478,
+    "ast_hash": "24378a4c0928a42bee57a3442bae7a41",
+    "semantic_hash": "24378a4c0928a42bee57a3442bae7a41"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1785393327.4810092,
+    "ast_hash": "bcb00e240634dd9448e57386fdff1902",
+    "semantic_hash": "bcb00e240634dd9448e57386fdff1902"
+  },
+  "jsconfig.json": {
+    "mtime": 1785427763.545055,
+    "ast_hash": "373b4d3b81ad935084b8292c8233423e",
+    "semantic_hash": "373b4d3b81ad935084b8292c8233423e"
+  },
+  "next.config.mjs": {
+    "mtime": 1785393327.5672965,
+    "ast_hash": "9b2513e16440eb1cf02bc3ff4b3d8a34",
+    "semantic_hash": "9b2513e16440eb1cf02bc3ff4b3d8a34"
+  },
+  "package.json": {
+    "mtime": 1785428784.5150583,
+    "ast_hash": "35f407162a6e0d600aed17d302fb48e2",
+    "semantic_hash": "35f407162a6e0d600aed17d302fb48e2"
+  },
+  "page_original.js": {
+    "mtime": 1785519434.3758032,
+    "ast_hash": "954097076a8a5936b73543a974ca16e7",
+    "semantic_hash": "954097076a8a5936b73543a974ca16e7"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1785393327.6270282,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "src/app/about/page.js": {
+    "mtime": 1785514162.8530166,
+    "ast_hash": "e9b96a97abaf6df1f66f6969b7f8ff76",
+    "semantic_hash": "e9b96a97abaf6df1f66f6969b7f8ff76"
+  },
+  "src/app/layout.js": {
+    "mtime": 1785496945.825097,
+    "ast_hash": "9baf7cc4b73142d99c00f13067a9c25c",
+    "semantic_hash": "9baf7cc4b73142d99c00f13067a9c25c"
+  },
+  "src/app/ldf/page.js": {
+    "mtime": 1785514150.590363,
+    "ast_hash": "8fc1512407c8c019a9f7e5988d4d10ab",
+    "semantic_hash": "8fc1512407c8c019a9f7e5988d4d10ab"
+  },
+  "src/app/news/page.js": {
+    "mtime": 1785514139.238289,
+    "ast_hash": "fc5a213b031863b76105bc8fd99d1aa2",
+    "semantic_hash": "fc5a213b031863b76105bc8fd99d1aa2"
+  },
+  "src/app/page.js": {
+    "mtime": 1785521887.545272,
+    "ast_hash": "15b972360363c68ad7819a0066758bc9",
+    "semantic_hash": "15b972360363c68ad7819a0066758bc9"
+  },
+  "src/components/Footer.jsx": {
+    "mtime": 1785518468.5911164,
+    "ast_hash": "c4010d0feba70e881b77aa795511dc97",
+    "semantic_hash": "c4010d0feba70e881b77aa795511dc97"
+  },
+  "src/components/LdfCarousel.js": {
+    "mtime": 1785513795.9480352,
+    "ast_hash": "feede1bd105f7726f784491e45480641",
+    "semantic_hash": "feede1bd105f7726f784491e45480641"
+  },
+  "src/components/Navbar.jsx": {
+    "mtime": 1785495692.611832,
+    "ast_hash": "be5b2c8832667b6014b78bddf50848eb",
+    "semantic_hash": "be5b2c8832667b6014b78bddf50848eb"
+  },
+  "src/components/Ornaments.js": {
+    "mtime": 1785518233.3978388,
+    "ast_hash": "e8abac0053b21d021f6ebfe29eca84c7",
+    "semantic_hash": "e8abac0053b21d021f6ebfe29eca84c7"
+  },
+  "src/lib/utils.js": {
+    "mtime": 1785428784.2798705,
+    "ast_hash": "d1c4afdedf414ae731f58a28173db977",
+    "semantic_hash": "d1c4afdedf414ae731f58a28173db977"
+  }
+}
